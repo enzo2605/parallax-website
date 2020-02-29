@@ -1,0 +1,22 @@
+{
+  "name": "parallax-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/enzo2605/parallax-website.git"
+  },
+  "author": "Vincenzo Iannucci",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/enzo2605/parallax-website/issues"
+  },
+  "homepage": "https://github.com/enzo2605/parallax-website#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
