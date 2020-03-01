@@ -1,8 +1,12 @@
 let slides, index = 0, btnRight, btnLeft;
 
 slides = document.querySelectorAll('.slide');
-btnRight = document.querySelector('.arrow-right');
-btnLeft = document.querySelector('.arrow-left');
+btnRight = document.querySelector('.arrow--right');
+btnLeft = document.querySelector('.arrow--left');
+
+/**********************************************************
+ *                FUNZIONI
+***********************************************************/
 
 function sliderRight() {
 
@@ -51,7 +55,9 @@ function sliderLeft() {
         btnRight.setAttribute('id',i-1);
     }
 }
-
+/**********************************************************
+ *                Listener di eventi
+***********************************************************/
 btnRight.addEventListener('click', () => {
     sliderRight();
 }, false);

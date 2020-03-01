@@ -1,12 +1,16 @@
 body {
     font-family: 'Open Sans',;
     font-weight: 400;
-    line-height: 1.2rem;
     color: $color-grey-dark;
 }
 
-.heading-primary {
+.heading__text-box {
     @include centerElement;
+    z-index: 3;
+    width: 100%;
+}
+
+.heading-primary {
     color: white;
-    font-size: 30rem;
+    font-size: 15rem;
 }

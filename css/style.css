@@ -1,5 +1,22 @@
 .active {
-  display: block !important; }
+  display: block !important;
+  transition: all 0.2s !important; }
+
+.effects {
+  transform: translateX(-234rem); }
+
+.text-center {
+  text-align: center; }
+
+.filter {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0.4;
+  background-color: #000000; }
 
 *,
 *::after,
@@ -17,38 +34,61 @@ body {
 body {
   font-family: "Open Sans";
   font-weight: 400;
-  line-height: 1.2rem;
   color: #777; }
 
-.heading-primary {
+.heading__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 100%; }
+
+.heading-primary {
   color: white;
-  font-size: 30rem; }
+  font-size: 15rem; }
 
-#section-2 {
-  background-image: url(../img/nat02.jpg); }
+/*
+#section-2{
+    background-image: url(../img/nat02.jpg);
+}
 
-#section-3 {
-  background-image: url(../img/nat03.jpg); }
+#section-3{
+    background-image: url(../img/nat03.jpg);
+}
 
-#section-4 {
-  background-image: url(../img/nat04.jpg); }
+#section-4{
+    background-image: url(../img/nat04.jpg);
+}
 
 .section {
-  width: 100%;
-  height: 100vh;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; }
-
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+*/
 .arrow {
-  width: 4rem;
-  position: relative;
-  z-index: 2; }
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  z-index: 2;
+  top: 50%; }
+  .arrow--left {
+    background-image: url(../img/arrow-light-left.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0; }
+  .arrow--right {
+    background-image: url(../img/arrow-light-right.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    right: 0; }
+  .arrow:hover {
+    cursor: pointer; }
 
 .slide {
   width: 100%;
@@ -61,12 +101,22 @@ body {
   transition: all .2s; }
   .slide--1 {
     background-image: url(../img/nat01.jpg);
-    z-index: 1; }
+    z-index: 1;
+    transform: translateX(0); }
   .slide--2 {
     background-image: url(../img/nat02.jpg);
     display: none;
-    z-index: 1; }
+    z-index: 1;
+    transform: translateX(0); }
   .slide--3 {
     background-image: url(../img/nat03.jpg);
     display: none;
-    z-index: 1; }
+    z-index: 1;
+    transform: translateX(0); }
+  .slide__text {
+    color: orange;
+    font-size: 10rem; }
+
+.slider {
+  width: 100%;
+  height: 100vh; }
