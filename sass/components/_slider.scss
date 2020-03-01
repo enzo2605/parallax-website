@@ -1,0 +1,27 @@
+.slide {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: all .2s;
+
+    &--1 {
+        background-image: url(../img/nat01.jpg);
+        z-index: 1;
+    }
+
+    &--2 {
+        background-image: url(../img/nat02.jpg);
+        display: none;
+        z-index: 1;
+    }
+
+    &--3 {
+        background-image: url(../img/nat03.jpg);
+        display: none;
+        z-index: 1;
+    }
+}

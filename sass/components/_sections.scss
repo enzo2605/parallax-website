@@ -1,0 +1,28 @@
+
+#section-2{
+    background-image: url(../img/nat02.jpg);
+}
+
+#section-3{
+    background-image: url(../img/nat03.jpg);
+}
+
+#section-4{
+    background-image: url(../img/nat04.jpg);
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.arrow {
+    width: 4rem;
+    position: relative;
+    z-index: 2;
+}
+

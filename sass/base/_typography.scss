@@ -4,3 +4,9 @@ body {
     line-height: 1.2rem;
     color: $color-grey-dark;
 }
+
+.heading-primary {
+    @include centerElement;
+    color: white;
+    font-size: 30rem;
+}
