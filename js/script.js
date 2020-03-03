@@ -26,9 +26,12 @@ function sliderRight() {
     //se l'indice è diverso da 0, rimuovi la classe 'active' dall'elemento precedente.
     else {
         //rimuovi la classe 'active' dall'elemento corrente.
+        //slides[index].classList.add('slide-left'); 
         slides[index].classList.remove('active'); 
         //aggiungo la classe active all'elemento successivo.
+        //slides[index + 1].classList.add('slide-left2'); 
         slides[index+1].classList.add('active');
+        
         //aggiorno l'id del bottone destro con il numero della diapositiva corrente che sto visualizzando
         btnRight.setAttribute('id',index+1);
     }
