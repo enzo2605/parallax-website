@@ -3,29 +3,30 @@
     height: 100vh; 
     background-size: cover;
     background-position: center;
+    
     position: absolute;
     top: 0;
     right: 0;
-    transition: all .2s;
+    //transition: transform .5s ease-in-out;
     
     &--1 {
         background-image: url(../img/nat01.jpg);
         z-index: 1;
-        transform: translateX(0);
+        display: none;
     }
 
     &--2 {
         background-image: url(../img/nat02.jpg);
         display: none;
         z-index: 1;
-        transform: translateX(0);
+        
     }
 
     &--3 {
         background-image: url(../img/nat03.jpg);
         display: none;
         z-index: 1;
-        transform: translateX(0);
+        
     }
 
     &__text {
@@ -37,5 +38,4 @@
 .slider {
     width: 100%;
     height: 100vh;
-    transition: all .2s;
 }

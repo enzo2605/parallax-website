@@ -1,10 +1,9 @@
 @keyframes slideLeft {
-    0%        {left: 100%; width: 0%;}
-    5%        {left: 0%;}
-    25%       {left: 0%;}
-    30%       {left: -250rem;}
-    30.0001%  {left: -100%; width: 100%}
-    100%      {left: -100%; width: 0%;}
+    0%        {left: 0rem;}
+    5%        {left: -1rem;}
+    25%       {left: -100rem;}
+    30%       {left: -122rem}
+    100%      {left: -144rem;}
 }
 
 @keyframes slideLeft2 {

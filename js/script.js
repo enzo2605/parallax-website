@@ -3,6 +3,8 @@ let slides, index = 0, btnRight, btnLeft;
 slides = document.querySelectorAll('.slide');
 btnRight = document.querySelector('.arrow--right');
 btnLeft = document.querySelector('.arrow--left');
+filter = document.querySelector('.filter');
+slider = document.querySelector('.slider');
 
 /**********************************************************
  *                FUNZIONI
@@ -10,8 +12,13 @@ btnLeft = document.querySelector('.arrow--left');
 
 function sliderRight() {
 
-    let index = parseInt(btnRight.getAttribute('id'));
+    let index, imageWidth;
+
+    index = parseInt(btnRight.getAttribute('id'));
     console.log('RIGHT: '+index);
+
+    imageWidth = filter.clientWidth;
+    console.log('width: ' + imageWidth);
 
     //se l'indice è uguale alla lunghezza dell'array slides.
     if(index == slides.length-1) {
@@ -26,12 +33,9 @@ function sliderRight() {
     //se l'indice è diverso da 0, rimuovi la classe 'active' dall'elemento precedente.
     else {
         //rimuovi la classe 'active' dall'elemento corrente.
-        //slides[index].classList.add('slide-left'); 
         slides[index].classList.remove('active'); 
         //aggiungo la classe active all'elemento successivo.
-        //slides[index + 1].classList.add('slide-left2'); 
-        slides[index+1].classList.add('active');
-        
+        slides[index + 1].classList.add('active');
         //aggiorno l'id del bottone destro con il numero della diapositiva corrente che sto visualizzando
         btnRight.setAttribute('id',index+1);
     }
@@ -39,7 +43,7 @@ function sliderRight() {
 
 function sliderLeft() {
 
-    console.log('LEFT: '+btnRight.getAttribute('id'));
+    console.log('LEFT: '+ btnRight.getAttribute('id'));
 
     //leggo il valore dell'id del bottone destro
     let i = btnRight.getAttribute('id');
@@ -48,7 +52,7 @@ function sliderLeft() {
         slides[i].classList.remove('active');
         slides[slides.length - 1].classList.add('active');
         //aggiorno l'id del bottone
-        btnRight.setAttribute('id',slides.length - 1);
+        btnRight.setAttribute('id', slides.length - 1);
     }
 
     else {
